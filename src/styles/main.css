@@ -1,0 +1,102 @@
+
+html,
+body,
+#app {
+  background: var(--secondary-background);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  --main-background: #ffffff;
+  --main-text-color: #010101;
+  --main-bar-color: #ffffff;
+  --secondary-bar-color: #f6f6f6;
+
+  --secondary-background: #dcdcdc;
+  --secondary-text-color: #1e1e1e;
+
+  --complement-color: #676767;
+
+  --color-blurple: #5865f2;
+  --color-success: #43b581;
+  --color-gray: #747f8d;
+  --color-danger: #f04747;
+  --color-orange: #ff8916;
+  --color-dark-gray: #23272a;
+  --color-light-gray: #eceaea;
+
+  --ui-checkbox-icon-before-background-a: #ffffff;
+  --ui-checkbox-icon-before-background-b: #e3e3e3;
+  --ui-checkbox-icon-after-background: #a9a9a9;
+  --ui-checkbox-iconbox-background-a: #e1e0e5;
+  --ui-checkbox-iconbox-background-b: #c5c9d2;
+  --ui-checkbox-icon-color-on: #00ffe2;
+  --ui-checkbox-bar-color: #444444;
+
+  --searchbox-searchbox-before-background-a: #ececec;
+  --searchbox-searchbox-before-background-b: #d2d2d2;
+  --searchbox-searchbox-after-background: #cecece;
+  --searchbox-searchbox-background-a: #e7e7e8;
+  --searchbox-searchbox-background-b: #d8d8dc;
+}
+
+/* html.dark {
+  --main-background: #010101;
+  --main-text-color: #ffffff;
+
+  --secondary-background: #181818;
+  --secondary-text-color: #dcdcdc;
+
+  --ui-checkbox-icon-before-background-a: #212121;
+  --ui-checkbox-icon-before-background-b: #1c1c1c;
+  --ui-checkbox-icon-after-background: #111111;
+  --ui-checkbox-iconbox-background-a: #1c1b1b;
+  --ui-checkbox-iconbox-background-b: #151515;
+  --ui-checkbox-icon-color-on: #00ffe2;
+  --ui-checkbox-bar-color: #444444;
+
+  --searchbox-searchbox-before-background-a: #1a1a1a;
+  --searchbox-searchbox-before-background-b: #171717;
+  --searchbox-searchbox-after-background: #151515;
+  --searchbox-searchbox-background-a: #1c1b1b;
+  --searchbox-searchbox-background-b: #151515;
+
+} */
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background-color: var(--color-blurple);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.blurple {
+  background-color: var(--color-blurple);
+  color: #ffffff;
+}
+
+.success {
+  background-color: var(--color-success);
+  color: #ffffff;
+}
+
+.danger {
+  background-color: var(--color-danger);
+  color: #ffffff;
+}
+
+.secondary {
+  background-color: var(--color-gray);
+  color: #ffffff;
+}

@@ -1,0 +1,32 @@
+firstLogin:
+  forms:
+    class: Class
+    level: School level
+    lv:
+      a: Language A
+      b: Language B
+    option: Option
+    section:
+      dnl: DNL
+      euro: European section
+    spe:
+      a: First speciality
+      b: Second speciality
+      c: Third speciality
+      c-bis: Speciality stop last year
+    subjects:
+      bad: Subjects you are bad
+      good: Subjetcs that you're good
+      help:
+        subject: Subjects that which you can help
+        wish: Would you want to help someone ?
+      receive:
+        subject: Subjects which you want help
+        wish: Would you want receive help ?
+    techno: Technological subjects
+  subTitle: Some informations about you
+  title: More informations
+not-found: Page not found
+param-required: '* Required'
+send: Send
+next: Next

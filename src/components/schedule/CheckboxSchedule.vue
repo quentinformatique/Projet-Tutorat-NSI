@@ -1,0 +1,103 @@
+<template>
+  <div class="checkbox">
+    <label :for="`checkbox-${props.id}`" style="display: flex; gap: 0.5rem;">
+      <div style="color: var(--color-success)">
+        Libre
+      </div>
+      |
+      <div style="color: var(--color-danger)">
+        Occupé
+      </div>
+    </label>
+    <input
+      :id="`checkbox-${props.id}`"
+      v-model="check"
+      class="check"
+      type="checkbox"
+      name=""
+      @change="onCheck"
+    >
+  </div>
+</template>
+
+<script lang="ts" setup>
+
+const props = defineProps({
+  id: {
+    type: String,
+    required: true,
+  },
+  modelValue: {
+    type: String,
+    required: true,
+  },
+})
+
+const update = defineEmits(['update:modelValue', 'change'])
+
+const value = computed({
+  get: () => {
+    return props.modelValue
+  },
+  set: (v: boolean) => {
+    update('update:modelValue', v)
+  },
+})
+
+const check = ref(value.value === 'free')
+
+const onCheck = () => {
+  update('change')
+  value.value = check.value ? 'free' : 'buisy'
+}
+
+</script>
+
+<style scoped>
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 5px;
+    position: relative;
+    width: 52px;
+    height: 30px;
+    -webkit-appearance: none;
+    background-color: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.check:checked[type="checkbox"] {
+    background-color: var(--color-success);
+}
+
+.check[type="checkbox"] {
+  background-color: var(--color-danger);
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform: scale(0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+
+}
+
+input:checked[type="checkbox"]::before {
+    left: 22px;
+
+}
+
+</style>

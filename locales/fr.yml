@@ -1,0 +1,35 @@
+firstLogin: 
+  title: Informations Complémentaires
+  subTitle: Pour s'assurer du bon fonctionnement de la plateforme, nous avons besoin de quelques informations sur vous. Les informations que vous rentrerez pourront être modifiés plus tard.
+  forms:
+    level: Niveau Scolaire
+    class: Classe
+    spe:
+      a: Première spécialité
+      b: Deuxième spécialité
+      c: Troisième spécialité
+      c-bis: Spécialité arrêtée l'année dernière
+    techno: Filiaire Technologique
+    lv:
+      a: Langue Vivante A
+      b: Langue Vivante B
+    option: Option
+    section:
+      euro: Section Européenne
+      dnl: DNL
+    subjects:
+      help: 
+        wish: Voudriez-vous devenir tuteur de quelqu'un ?
+        subject: Les matières dans lesquelles vous pourriez aider
+      receive:
+        wish: Voudriez-vous recevoir de l'aide ?
+        subject: Les matières dans lesquelles vous voudriez vous faire aider
+      good: Autres matières dans lesquelles vous êtes à l'aise
+      bad: Les matières dans lesquelles vous êtes moins à l'aise
+    
+not-found: Page non trouvée
+param-required: "* Obligatoire"
+send: Envoyer
+next: Suivant
+
+

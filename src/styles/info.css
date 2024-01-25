@@ -1,0 +1,27 @@
+.info .container {
+  width: 80%;
+}
+  
+.info .main-t {
+  font-size: 26px;
+  font-weight: 550;
+  margin-top: 75px;
+}
+
+.info .item {
+  margin: 40px 0;
+}
+
+.info .title {
+  font-size: 21px;
+  font-weight: 550;
+
+}
+
+.info .content {
+  margin: 20px 0;
+}
+
+.info .part {
+  margin: 10px 0;
+}
